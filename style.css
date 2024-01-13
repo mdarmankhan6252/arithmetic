@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+/* -----------defult style----------- */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Work Sans', sans-serif;
+}
+h1{
+   color: #181818;
+   font-size: 62px;
+   font-weight: 700;
+}
+h2{
+   color: #181818;
+   font-size: 48px;
+   font-weight: 600;
+}
+h3{
+   color: #181818;
+   font-size: 44px;
+   font-weight: 700;
+}
+h4{
+   color: #181818;
+   font-size: 20px;
+   font-weight: 600;
+}
+span{
+   color: #FF900E;
+}
+p{
+   color: #727272;
+   font-size: 16px;
+   font-weight: 400;
+   padding: 15px 0;
+}
+.btn{
+   text-decoration: none;
+   display: inline-block;
+   border: 2px solid #FF900E;
+   background-color: #FF900E;
+   color: #fff;
+   padding: 12px 24px;
+   margin: 30px 0;
+   font-size: 18px;
+   font-weight: 600;
+   transition: 0.5s;
+   border-radius: 10px;
+}
+.btn:hover{
+   background-color: transparent;
+   color: #000;
+}
+.container{
+   width: 90%;
+   max-width: 1420px;
+   margin: auto;
+}
+
+/* ---------------header----------- */
+
+header{
+   background-color: #FFF4E7;
+   width: 100%;
+   height: 100%;
+   padding: 20px 0;
+}
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.logo{
+   font-size: 40px;
+   cursor: pointer;
+}
+nav ul li{
+   display: inline-block;
+   margin-left: 30px;
+}
+nav ul li a{
+   text-decoration: none;
+   color: #424242;
+   font-size: 18px;
+   transition: 0.3s;
+}
+nav ul li a:hover{
+   color: #000;
+}
+.text-area{
+   text-align: center;
+   padding-top: 150px;
+}
+.banner-img{
+   width: 100%;
+   height: 100%;
+   padding-top: 50px;
+}
+.banner-img img{
+   width: 100%;
+}
+
+/* ----------main------------- */
+
+/* ----------features------------- */
+
+
+.features{
+   padding: 100px 0 50px;
+}
+.row{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.feature-img-col{
+   flex-basis: 55%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 22px;
+}
+.feature-img-col img{
+   width: 100%;
+}
+.feature-col{
+   flex-basis: 40%;
+}
+/* -------------experience--------- */
+.experience{
+   padding-top: 100px;
+}
+.experience-col{
+   flex-basis: 46%;
+
+}
+.experience-col img{
+   width: 550px;
+}
+.title-text{
+   padding-left: 20px;
+   border-left: 5px solid #FF900E;
+
+}
+.experience-row{
+   align-items: center;
+
+}
+
+.exp-year{
+   background-color: #FF900E;
+   width: 350px;
+   text-align: center;
+   padding: 40px;
+   border-radius: 8px;
+   position: relative;
+   bottom: 100px;
+   right: 90px;
+}
+.exp-year h1, h5{
+   color: #fff;
+}
+.exp-year h5{
+   font-size: 20px;
+   font-weight: 500;
+
+}
+.experience-text{
+   margin-top: 30px;
+   background-color: #fffaf6;
+   padding: 10px;
+   border-radius: 10px;
+   transition: 0.5s;
+}
+.experience-text:hover{
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+/* -------------facts--------- */
+.facts{
+   padding: 50px 0;
+   
+}
+.facts-col{
+   text-align: center;
+   margin: 120px auto 50px;
+   border: 2px solid #FF900E;
+   border-radius: 8px;
+   padding: 30px;
+   flex-basis: 24%;
+   background-color: #fffbf7;
+   transition: 0.5s;
+}
+.facts-col:hover{
+   box-shadow: 0 0 20px 0 rgba(210, 140, 11, 0.2);
+
+}
+.facts-col img{
+   width: 55px;
+}
+.facts-col h2{
+   font-size: 28px;
+   padding: 8px 0 2px;
+}
+.facts-col h4{
+   font-size: 18px;
+   color: #424242;
+   width: 100%;
+}
+.facts-row{
+   justify-content: space-around;
+}
+
+/* ----------------sponsors---------- */
+.sponsors{
+   text-align: center;
+   justify-content: space-around;
+}
+.sponsors-col{
+   flex-basis: 19%;
+   padding-top: 50px;
+}
+.sponsors-col img{
+   width: 150px;
+}
+/* -------------footer----------- */
+
+footer{
+   background-color: #FFF4E7;
+   padding: 20px 0;
+   text-align: center;
+   margin: 50px 0;
+   color: #424242;
+}
+/* --------responsive for mobile-------------- */
+@media screen and (max-width:576px) {
+   .container{
+      width: 95%;
+   }
+   nav{
+      flex-direction: column;
+   }
+   .logo{
+      font-size: 30px;
+      padding-bottom: 25px;
+   }
+   .text-area h1{
+      font-size: 42px;
+      padding-bottom: 15px;
+   }
+   .text-area p{
+      font-size: 14px;
+   }
+   .feature-img-col{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 22px 0;
+   }
+   .row{
+      flex-direction: column;
+   }
+   .feature-col h3{
+      padding-top: 30px;
+   }
+   .facts-col{
+      margin-top: 10px;
+      width: 100%;
+   }
+   .experience-row{
+      flex-direction: column-reverse;
+   }
+   .experience-col img{
+      width: 100%;
+   }
+   .exp-year{
+      top: -60px;
+     left: 50%;
+     transform: translate(-50%);
+
+   }
+}
